@@ -24,3 +24,73 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+@font-face {
+    font-family: 'SegoeUI';
+    font-style: normal;
+    font-weight: normal;
+    src: url('./assets/fonts/Segoe\ UI.ttf');
+}
+
+@font-face {
+    font-family: 'SegoeUI-Bold';
+    font-style: normal;
+    font-weight: bold;
+    src: url('./assets/fonts/Segoe\ UI\ Bold.ttf');
+}
+
+@font-face {
+    font-family: 'SegoeUI-BoldItalic';
+    font-style: italic;
+    font-weight: bold;
+    src: url('./assets/fonts/Segoe\ UI\ Bold\ Italic.ttf');
+}
+
+@font-face {
+    font-family: 'SegoeUI-Italic';
+    font-style: italic;
+    font-weight: normal;
+    src: url('./assets/fonts/Segoe\ UI\ Italic.ttf');
+}
+
+* {
+    font-family: 'SegoeUI';
+}
+
+.main-button {
+    --background: linear-gradient(90deg, rgba(102,126, 234, 1) 0%, rgba(100, 182, 255, 1) 100%);
+    --box-shadow: none;
+    position: relative;
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+.main-button::after {
+    content: " ";
+    position: absolute;
+    width: 80%;
+    right: 10%;
+    bottom: 0;
+    top: 10px;
+    height: 40px;
+    z-index: -1;
+    box-shadow: 0px 20px 20px -17px rgba(0, 111, 255, 1);
+}
+
+// Removing ion-button focus outline
+ion-button:focus {
+    outline: none !important;
+}
+
+ion-buttons:focus {
+    outline: none !important;
+}
+
+// Removing iOS and Android Header line for entire app
+ion-toolbar {
+    --border-width: 0 !important;
+}
+
+.header-md::after {
+    background: none;
+}
