@@ -49,7 +49,7 @@
   <div class="product-slider ion-padding-start">
     <ion-slides [options]="{ slidesPerView: 'auto', zoom: false, grabCursor: true }">
       <ion-slide *ngFor="let product of featuredProducts">
-        <ion-col class="ion-text-left">
+        <ion-col class="ion-text-left" routerLink="/item-details" routerDirection="forward">
           <img src="{{ product.image }}" />
           <p>${{ product.price }}</p>
           <h6>{{ product.name }}</h6>
@@ -66,7 +66,7 @@
   <div class="product-slider ion-padding-start">
     <ion-slides [options]="{ slidesPerView: 'auto', zoom: false, grabCursor: true }">
       <ion-slide *ngFor="let product of bestSellProducts">
-        <ion-col class="ion-text-left">
+        <ion-col class="ion-text-left" routerLink="/item-details" routerDirection="forward">
           <img src="{{ product.image }}" />
           <p>${{ product.price }}</p>
           <h6>{{ product.name }}</h6>

@@ -94,3 +94,33 @@ ion-toolbar {
 .header-md::after {
     background: none;
 }
+
+.notification {
+    span {
+        background-color: #F5576C;
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        top: 10%;
+        right: 10%;
+    }
+}
+
+// Customizing Product Slider Bullets
+
+.product-slider {
+    .swiper-pagination {
+        text-align: left;
+        padding-left: 20px;
+
+        .swiper-pagination-bullet {
+            background: #ffffff;
+            opacity: 1;
+        }
+
+        .swiper-pagination-bullet-active {
+            background: var(--ion-color-primary);
+        }
+    }
+}

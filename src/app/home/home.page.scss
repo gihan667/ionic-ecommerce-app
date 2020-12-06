@@ -6,18 +6,6 @@ ion-menu-button {
     margin-right: 10px;
 }
 
-.notification {
-    span {
-        background-color: #F5576C;
-        border-radius: 50%;
-        width: 10px;
-        height: 10px;
-        position: absolute;
-        top: 10%;
-        right: 10%;
-    }
-}
-
 .search {
     margin-bottom: 20px;
 
@@ -120,4 +108,13 @@ ion-menu-button {
             }
         }
     }
+}
+
+// Removing highlight when focused/clicked on product
+ion-slide:focus {
+    outline: none !important;
+}
+
+ion-col:focus {
+    outline: none !important;
 }
