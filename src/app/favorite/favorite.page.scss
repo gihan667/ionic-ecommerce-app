@@ -1,0 +1,52 @@
+.backbtn {
+    margin-left: 15px;
+}
+
+.notification {
+    margin-right: 15px;
+}
+
+ion-content {
+    --padding-top: 16px;
+    --padding-bottom: 16px;
+    --padding-start: 26px;
+    --padding-end: 26px;
+}
+
+.title {
+    margin-top: 0;
+    color: #434343;
+}
+
+.favorite-items {
+    margin-top: 20px;
+
+    ion-col {
+        padding: 10px;
+        
+        img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        p {
+            margin-top: 5px;
+            margin-bottom: 0;
+        }
+
+        h6 {
+            margin-top: 5px;
+            margin-bottom: 0;
+        }
+    }
+}
+
+.padding-left0 {
+    padding-left: 0 !important;
+}
+
+.padding-right0 {
+    padding-right: 0 !important;
+}
